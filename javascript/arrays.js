@@ -47,11 +47,41 @@ imageListC[7] = "images/watercolor/thumbs/artwork_8.jpg";
 imageListC[8] = "images/watercolor/thumbs/artwork_9.jpg";
 imageListC[9] = "images/watercolor/thumbs/artwork_10.jpg";
 
-
+//Cupcakes
+var imageListD = new Array();
+imageListD[0] = "images/cupcakes/cupcake-1.jpg";
+imageListD[1] = "images/cupcakes/cupcake-2.jpg";
+imageListD[2] = "images/cupcakes/cupcake-3.jpg";
+imageListD[3] = "images/cupcakes/cupcake-4.jpg";
+imageListD[4] = "images/cupcakes/cupcake-5.jpg";
+imageListD[5] = "images/cupcakes/cupcake-6.jpg";
+imageListD[6] = "images/cupcakes/cupcake-7.jpg";
+imageListD[7] = "images/cupcakes/cupcake-8.jpg";
+imageListD[8] = "images/cupcakes/cupcake-9.jpg";
+imageListD[9] = "images/cupcakes/cupcake-10.jpg";
+imageListD[10] = "images/cupcakes/cupcake-11.jpg";
+imageListD[11] = "images/cupcakes/cupcake-12.jpg";
+imageListD[12] = "images/cupcakes/cupcake-13.jpg";
+imageListD[13] = "images/cupcakes/cupcake-14.jpg";
+imageListD[14] = "images/cupcakes/cupcake-15.jpg";
+imageListD[15] = "images/cupcakes/cupcake-16.jpg";
+imageListD[16] = "images/cupcakes/cupcake-17.jpg";
+imageListD[17] = "images/cupcakes/cupcake-18.jpg";
+imageListD[18] = "images/cupcakes/cupcake-19.jpg";
+imageListD[19] = "images/cupcakes/cupcake-20.jpg";
+imageListD[20] = "images/cupcakes/cupcake-21.jpg";
+imageListD[21] = "images/cupcakes/cupcake-22.jpg";
+imageListD[22] = "images/cupcakes/cupcake-23.jpg";
+imageListD[23] = "images/cupcakes/cupcake-24.jpg";
+imageListD[24] = "images/cupcakes/cupcake-25.jpg";
+imageListD[25] = "images/cupcakes/cupcake-26.jpg";
+imageListD[26] = "images/cupcakes/cupcake-27.jpg";
+imageListD[27] = "images/cupcakes/cupcake-28.jpg";
+imageListD[28] = "images/cupcakes/cupcake-29.jpg";
+imageListD[29] = "images/cupcakes/cupcake-30.jpg";
 
 //create the buildThumbnail function
-function buildThumbnails()
-{
+function buildThumbnails() {
 	//hook onto the thumbs div
 	var thumbsDiv = document.getElementById("thumbs");
 	
@@ -77,6 +107,10 @@ function buildThumbnails()
 		//concatenation assignment operator..
 		output += '<img src="' + imageListC[k] + '" />';
 	}
+    for(var l=0; l < imageListD.length; l++)
+    {
+      output += '<img src="' +imageListD[l] + '" />';
+    }
 	thumbsDiv.innerHTML = output;
 	// thumbsDiv.innerHTML = 
 	// '<img src="' + imageList[0] + '" />' + 
